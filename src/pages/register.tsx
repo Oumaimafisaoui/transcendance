@@ -86,7 +86,9 @@ export const Register = () => {
           />
           <button className={styles.logIn}>Register</button>
         </div>
+        <Link href="register">Already have an account ? Log In.</Link>
       </form>
+
     </div>
     </Layout>
   );

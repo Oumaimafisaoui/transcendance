@@ -9,6 +9,7 @@ import fourty from '../../public/bg.svg';
 import gog from '../../public/bg.svg';
 import Navbar from '@/components/navbar/Navbar';
 import Layout from '@/components/Layout/layout';
+import register from './register'
 export const Login = () => {
   const [data, setData] = useState({
     email: '',
@@ -74,6 +75,7 @@ export const Login = () => {
             />
           <button className={styles.logIn}>Login</button>
         </div>
+        <Link href="register">You do not have an account ? Sign Up.</Link>
       </form>
     </div>
     </Layout>
