@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import axios from 'axios';
 import Image from 'next/image';
-import fourty from '../../public/bg.svg';
-import gog from '../../public/bg.svg';
+import fourty from '../../public/fourty.png';
+import gog from '../../public/google.png';
 import Layout from '@/components/Layout/layout';
 
 export const Register = () => {
