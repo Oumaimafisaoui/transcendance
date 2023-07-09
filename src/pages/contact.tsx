@@ -1,11 +1,13 @@
 import React from "react";
-import styles from "./page.module.css";
+import styles from "../styles/contact.module.css";
 import Image from "next/image";
-import bg from "../../../public/bg.png";
-import SmallButton from "../../components/Button/smallButton";
+import bg from "@/../public/bg.png";
+import SmallButton from "../components/Button/smallButton";
+import Layout from "@/components/Layout/layout";
 
 const Contact = () => {
   return (
+    <Layout>
     <div className={styles.container}>
       <div>
         <Image alt="" src={bg} className={styles.imge} />
@@ -17,6 +19,7 @@ const Contact = () => {
         <SmallButton url="send" text="Send" />
       </form>
     </div>
+    </Layout>
   );
 };
 
