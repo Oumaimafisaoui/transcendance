@@ -30,7 +30,7 @@ export const Register = () => {
 
   const postData = (data: { username:string; email: string; password: string}) => {
     axios
-      .post('http://localhost:3000/api/login', data)
+      .post('http://localhost:3000/api/register', data)
       .then((res: any) => console.log(res))
       .catch((err: any) => console.log(err));
   };
