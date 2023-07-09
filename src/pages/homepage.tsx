@@ -7,6 +7,7 @@ import bg from "@/../public/bg.png";
 import { TypeAnimation } from "react-type-animation";
 import Button from "../components/Button/button";
 import Layout from "@/components/Layout/layout";
+import SmallButton from "@/components/Button/smallButton";
 
 export default function Homepage() {
   return (
@@ -30,7 +31,7 @@ export default function Homepage() {
             into the fun of Pong Game! Join us now and dive into the fun of Pong
             Game! Join us now and dive into the fun of Pong Game!
           </p>
-          <Button url="auth/register" text="Start Playing!" />
+          <SmallButton url="login" text="play" />
         </div>
         <div className={styles.item2}>
           <Image alt="" src={bg} className={styles.img} />

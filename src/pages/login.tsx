@@ -8,7 +8,7 @@ import Image from 'next/image';
 import fourty from '../../public/bg.svg';
 import gog from '../../public/bg.svg';
 import Navbar from '@/components/navbar/Navbar';
-
+import Layout from '@/components/Layout/layout';
 export const Login = () => {
   const [data, setData] = useState({
     email: '',
@@ -37,6 +37,8 @@ export const Login = () => {
   
   return (
     // < Navbar />
+    <Layout>
+
     <div className={styles.container}>
       <div className={styles.auth}>
         <button className={styles.button}><Image className={styles.logo} alt="" src={fourty}/><div>Login with Intra</div></button>
@@ -57,7 +59,7 @@ export const Login = () => {
             value={data.email}
             onChange={handleChange}
             required
-          />
+            />
           <label className={styles.label}>
             Password:
           </label>
@@ -69,11 +71,12 @@ export const Login = () => {
             value={data.password}
             onChange={handleChange}
             required
-          />
+            />
           <button className={styles.logIn}>Login</button>
         </div>
       </form>
     </div>
+    </Layout>
   );
 };
 
