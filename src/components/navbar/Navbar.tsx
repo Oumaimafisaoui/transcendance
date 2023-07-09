@@ -3,7 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import styles from './page.module.css'
 import SmallButton from '../Button/smallButton'
-
+import contact from '@/pages/contact/contact'
+// import {Link} from 'react-router-dom'
 const links = 
 [
     {
@@ -21,7 +22,7 @@ const links =
 const Navbar = () => {
   return (
     <div className={styles.container} id="home">
-      <Link href="/" passHref>
+      <Link href="/">
         <svg
           height="27"
           viewBox="0 0 166 54"
@@ -36,6 +37,7 @@ const Navbar = () => {
             {links.map((link) =>(<Link key={link.id} href={link.url} className={styles.link}>{link.title}</Link>))}
         </div>
        <SmallButton url="contact" text="Contact Us" />
+       {/* <Link to="/contact">Hello</Link> */}
     </div>
   )
 }
