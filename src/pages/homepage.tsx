@@ -31,7 +31,7 @@ export default function Homepage() {
             into the fun of Pong Game! Join us now and dive into the fun of Pong
             Game! Join us now and dive into the fun of Pong Game!
           </p>
-          <SmallButton url="login" text="play" />
+          <SmallButton url="login" text="Play now"/>
         </div>
         <div className={styles.item2}>
           <Image alt="" src={bg} className={styles.img} />
