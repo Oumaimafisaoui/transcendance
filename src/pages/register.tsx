@@ -11,7 +11,7 @@ import Layout from '@/components/Layout/layout';
 
 export const Register = () => {
   const [data, setData] = useState({
-    username:'',
+    nickname:'',
     email: '',
     password: '',
   });
@@ -28,16 +28,15 @@ export const Register = () => {
     postData(data);
   };
 
-  const postData = (data: { username:string; email: string; password: string}) => {
+  const postData = (data: { nickname:string; email: string; password: string}) => {
     axios
-      .post('http://localhost:3000/api/register', data)
+      .post('http://10.13.5.7:9000/auth/register', data)
       .then((res: any) => console.log(res))
       .catch((err: any) => console.log(err));
   };
   
   
   return (
-    // < Navbar />
     <Layout>
     <div className={styles.container}>
       <div className={styles.auth}>
@@ -52,11 +51,11 @@ export const Register = () => {
             Username:
           </label>
           <input
-            type="username"
-            placeholder="Username"
+            type="nickname"
+            placeholder="nickname"
             className={styles.input}
-            name="username"
-            value={data.username}
+            name="nickname"
+            value={data.nickname}
             onChange={handleChange}
             required
           />
